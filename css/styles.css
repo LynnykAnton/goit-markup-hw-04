@@ -38,8 +38,6 @@ button {
   display: inline-block;
   cursor: pointer;
   text-align: center;
-  /* расширяем кликабельную площадь кнопки*/
-  /* border: 1px solid transparent; */
 }
 
 img {
@@ -63,18 +61,12 @@ body {
 }
 
 .container {
-  /* width: 1200px; */
-  /* простой вариант, не реагирует на ширину монитора */
-
-  /* width: 100%; */
-  /* width: 100% одновременно перед max-width задаем для ... (уточнить!) */
   max-width: 1200px;
 
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: 2px solid red; */
 }
 
 .section {
@@ -127,7 +119,6 @@ body {
   letter-spacing: 0.03em;
   color: black;
   margin-right: 93px;
-  /* outline: 2px solid tomato; */
 }
 
 .header-logo-text span,
@@ -156,11 +147,6 @@ body {
   display: flex;
   gap: 50px;
 }
-
-/* другой способ задать расстояния между элементами списка */
-/* .menu-nav-item:not(:last-child) {
-  margin-right: 50px;
-} */
 
 .current {
   color: var(--accent-color);
@@ -223,7 +209,6 @@ body {
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
-  /* padding-top: 200px; */
 
   width: 696px;
   margin-bottom: 30px;
@@ -243,11 +228,6 @@ body {
   min-width: 200px;
   padding: 8px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
-  /* display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em; */
 }
 
 .hero-btn:active {
@@ -269,8 +249,6 @@ body {
 }
 
 .advantages-item {
-  max-width: 270px;
-  flex-basis: 270px;
 }
 
 .advantages-item::before {
@@ -297,11 +275,6 @@ body {
 .advantages-item:nth-child(4)::before {
   background-image: url('../images/group4.svg');
 }
-
-/* для ADVANTAGES вариант2 */
-/* .advantages-item-pic {
-  margin-bottom: 30px;
-} */
 
 .advantages-item-title {
   font-weight: 700;
@@ -367,7 +340,6 @@ body {
   line-height: 19px;
   text-align: center;
   letter-spacing: 0.03em;
-  /* color: var(--item-text-color); */
   color: inherit;
   margin-bottom: 16px;
 }
@@ -409,20 +381,7 @@ body {
   /* justify-content: center; */
 }
 
-/* чтобы бордер и иконка меняли цвет одновременно 
-когда ссылка занимает не всю площадь родителя*/
-/* .clients-list-item:hover,
-   .clients-list-item:focus {
-  border-color: var(--accent-color);
-} 
-   .clients-list-item:hover .clients-link,
-   .clients-list-item:focus .clients-link {
-  fill: var(--accent-color);
-} */
-
 .clients-link {
-  /* учитываем вертик. бордеры 1*2px */
-  /* padding: 14px 0; */
   width: calc(100%);
   height: 92px;
   border: 1px solid #afb1b8;
@@ -454,10 +413,6 @@ body {
 .footer-contact-item:not(:last-child) {
   margin-bottom: 9px;
 }
-/* вариант для задания большего количества свойств последнему элементу */
-/* .footer-contact-item:last-child {
-  margin-bottom: 0;
-} */
 
 .footer .container {
   display: flex;
@@ -562,27 +517,15 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-
-  /*другой способ построения сетки*/
-  /* margin: -15px; */
 }
 
 .portfolio-item {
   width: calc((100% - 60px) / 3);
-
-  /*другой способ построения сетки*/
-  /* width: calc(100% / 3 - 30px);
-  margin: 15px; */
 }
 
 .portfolio-item-link:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
-/* тень под картинкой не нужна */
-/* .portfolio-item-link:hover .portfolio-item-image {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-} */
 
 .portfolio-item-text {
   padding: 20px 24px 19px;
